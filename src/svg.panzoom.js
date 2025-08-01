@@ -154,7 +154,7 @@ extend(Svg, {
         break
       }
 
-      let lvl = Math.pow(1 + zoomFactor, (-1 * normalizedPixelDeltaY) / 100) * this.zoom()
+      let lvl = Math.pow(zoomFactor, (-1 * normalizedPixelDeltaY) / 100) * this.zoom()
       const p = this.point(ev.clientX, ev.clientY)
 
       if (lvl > zoomMax) {
